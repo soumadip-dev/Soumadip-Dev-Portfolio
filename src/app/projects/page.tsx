@@ -22,7 +22,7 @@ export default function Projects() {
 
       <div className="mb-10">
         <Heading className="font-black mb-6">
-          <span className="inline-flex items-center gap-2">What I've been working on</span>
+          <span className="inline-flex items-center gap-2">What I&rsquo;ve been working on</span>
         </Heading>
       </div>
 

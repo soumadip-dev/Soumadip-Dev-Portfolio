@@ -14,9 +14,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <Container className="min-h-[calc(100vh-200px)]">
-      {' '}
-      {/* Added min-height */}
+    <Container>
       <div className="flex items-center gap-4 mb-12">
         <div className="p-3 bg-primary/10 rounded-full">
           <Mail className="h-8 w-8 text-primary" strokeWidth={1.5} />
@@ -29,8 +27,8 @@ export default function ContactPage() {
         </Heading>
         <Paragraph className="mb-6 max-w-xl">
           I am a fresher and currently open to work opportunities.
-          <Highlight>Feel free to reach out via email or the contact form</Highlight> — I'll get
-          back to you as soon as I can.
+          <Highlight>Feel free to reach out via email or the contact form</Highlight>
+          {" — I'll get back to you as soon as I can."}
         </Paragraph>
       </div>
       <div className="pb-[90px] md:pb-[160px] lg:pb-[160px]">

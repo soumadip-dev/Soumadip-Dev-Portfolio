@@ -24,8 +24,7 @@ export default function Home() {
 
         <div className="space-y-6">
           <Paragraph>
-            I'm a <Highlight>Computer Applications graduate</Highlight> passionate about web
-            development and creating impactful digital solutions.
+            I&rsquo;m a <Highlight>Computer Applications graduate</Highlight> passionate about ...
           </Paragraph>
 
           <Paragraph>
