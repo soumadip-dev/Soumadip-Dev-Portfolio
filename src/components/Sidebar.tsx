@@ -10,7 +10,6 @@ import { Badge } from './Badge';
 import { Heading } from './Heading';
 import { navlinks } from '@/constants/navlinks';
 import { socials } from '@/constants/socials';
-import type { NavLink } from '@/types/navlink';
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -116,9 +115,9 @@ const Navigation = () => {
 
   const isActive = (href: string) => pathname === href;
 
-  const renderLinks = (links: NavLink[]) => (
+  const renderLinks = (links: any) => (
     <>
-      {links.map((link, index) => (
+      {links.map((link: any, index: any) => (
         <motion.div
           key={link.href}
           initial={{ opacity: 0, x: -20 }}
