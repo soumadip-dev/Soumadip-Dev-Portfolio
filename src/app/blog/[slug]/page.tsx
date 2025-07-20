@@ -30,12 +30,10 @@ export default function SingleProjectPage({ params }: { params: { slug: string }
   const slug = params.slug;
   const product = products.find(p => p.slug === slug);
 
-  if (!product) {
-    redirect('/projects');
-  }
+  if (!product) return redirect('/projects');
   return (
     <Container>
-      <SingleProduct product={product} />
+      <SingleProduct product={product as Product} />
     </Container>
   );
 }

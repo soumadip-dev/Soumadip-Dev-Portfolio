@@ -10,6 +10,7 @@ export const products = [
     description:
       'Crafty AI is a SaaS platform where you can write articles, generate blog titles, remove image backgrounds/objects, and review your resume.',
     thumbnail: crafty,
+    images: [crafty],
     stack: ['Nodejs', 'Expressjs', 'Postgresql', 'React js', 'Tailwindcss'],
     slug: 'crafty-ai',
     content: (
@@ -34,7 +35,7 @@ export const products = [
     title: 'Logiqo',
     description: 'Logiqo is a PERN stack project — a platform to solve coding problems.',
     thumbnail: logiqo,
-    images: logiqo,
+    images: [logiqo],
     stack: ['Nodejs', 'Expressjs', 'Postgresql', 'React js', 'Tailwindcss'],
     slug: 'algochurn',
     content: (
@@ -52,11 +53,12 @@ export const products = [
     ),
   },
   {
-    href: 'https://commit-mate.vercel.app/',
+    href: 'https://github.com/soumadip-dev/CommitMate-MERN',
     github: 'https://github.com/soumadip-dev/CommitMate-MERN',
     title: 'CommitMate',
     description: 'Connect with developers, manage your profile, and grow your network.',
     thumbnail: commitmate,
+    images: [commitmate],
     stack: ['Nodejs', 'Expressjs', 'Mongodb', 'React js', 'Tailwindcss'],
     slug: 'moonbeam',
     content: (
