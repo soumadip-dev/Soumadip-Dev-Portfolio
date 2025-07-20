@@ -100,7 +100,7 @@ export const Sidebar = () => {
                 text="Download Resume"
                 download
                 className="w-full bg-white border border-indigo-500/50 text-indigo-600 hover:bg-indigo-50 transition-all shadow-sm hover:shadow-md"
-                icon={<IconDownload className="h-4 w-4" />}
+                icon={<IconDownload className="h-4 w-4" />} 
               />
             </div>
           </motion.aside>
