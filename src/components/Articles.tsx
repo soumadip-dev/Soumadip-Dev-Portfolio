@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogs } from '@/constants/blogs.tsx';
+import { blogs } from '@/constants/blogs';
 import { motion } from 'framer-motion';
 import { Paragraph } from './Paragraph';
 import { ArrowUpRight } from 'lucide-react';
