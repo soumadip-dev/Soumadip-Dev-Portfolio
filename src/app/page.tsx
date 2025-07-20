@@ -18,7 +18,7 @@ export default function Home() {
       <div className="mb-10">
         <Heading className="mb-4">
           <span className="inline-flex items-center gap-2">
-            Hello there! I'm <span className="text-primary">Soumadip</span>
+            Hello there! I&rsquo;m <span className="text-primary">Soumadip</span>
           </span>
         </Heading>
 
