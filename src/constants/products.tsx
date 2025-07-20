@@ -53,7 +53,7 @@ export const products = [
     ),
   },
   {
-    href: 'https://github.com/soumadip-dev/CommitMate-MERN',
+    href: 'https://commit-mate.vercel.app/',
     github: 'https://github.com/soumadip-dev/CommitMate-MERN',
     title: 'CommitMate',
     description: 'Connect with developers, manage your profile, and grow your network.',
