@@ -21,10 +21,10 @@ export default function Home() {
             Hello there! I&#39;m <span className="text-primary">Soumadip</span>
           </span>
         </Heading>
-
         <div className="space-y-6">
           <Paragraph>
-            I&rsquo;m a <Highlight>Computer Applications graduate</Highlight> passionate about ...
+            I&rsquo;m a <Highlight>Computer Applications graduate</Highlight> passionate about web
+            development and software engineering.
           </Paragraph>
 
           <Paragraph>
