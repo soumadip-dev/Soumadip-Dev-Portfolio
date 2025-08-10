@@ -1,6 +1,7 @@
 import crafty from 'public/images/crafty-ai.png';
 import commitmate from 'public/images/commitmate.png';
 import logiqo from 'public/images/logiqo.png';
+import snipit from 'public/images/snipit.png';
 
 export const products = [
   {
@@ -75,25 +76,29 @@ export const products = [
       </div>
     ),
   },
-  // {
-  //   href: 'https://tailwindmasterkit.com',
-  //   title: 'Tailwind Master Kit',
-  //   description:
-  //     'A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.',
-  //   thumbnail: sidefolioTailwindMasterKit,
-  //   stack: ['Nextjs', 'Tailwindcss'],
-  //   slug: 'tailwindmasterkit',
-  //   content: (
-  //     <div>
-  //       <p>
-  //         A component library that helps developers build beautiful websites using Tailwind CSS. It
-  //         includes various layouts, UI kits, and templates for fast development.
-  //       </p>
-  //       <p>
-  //         Ideal for those who want to save time and maintain design consistency across their
-  //         projects with minimal effort.
-  //       </p>
-  //     </div>
-  //   ),
-  // },
+  {
+    href: 'https://github.com/soumadip-dev/URL-Shortener-MERN',
+    github: 'https://github.com/soumadip-dev/URL-Shortener-MERN',
+    title: 'SnipIt',
+    description:
+      'A URL shortening application developed using the MERN stack for efficient and modern web experience.',
+    thumbnail: snipit,
+    images: [snipit],
+    stack: ['Node.js', 'Express.js', 'MongoDB', 'React.js', 'Redux', 'Tailwind CSS'],
+    slug: 'snipit',
+    content: (
+      <div>
+        <p>
+          SnipIt is a full-stack application that allows users to shorten long URLs into sleek,
+          shareable links. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), it
+          provides a seamless user experience with a modern frontend and a robust backend API.
+        </p>
+        <p>
+          Users can generate short, unique URLs for long URLs, create custom short URLs, and track
+          URL usage with analytics. The application also includes secure user authentication using
+          JWT.
+        </p>
+      </div>
+    ),
+  },
 ];
