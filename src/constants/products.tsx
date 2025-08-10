@@ -1,7 +1,7 @@
-import crafty from 'public/images/crafty-ai.png';
-import commitmate from 'public/images/commitmate.png';
-import logiqo from 'public/images/logiqo.png';
-import snipit from 'public/images/snipit.png';
+const crafty = '/images/crafty-ai.png';
+const commitmate = '/images/commitmate.png';
+const logiqo = '/images/logiqo.png';
+const snipit = '/images/snipit.png';
 
 export const products = [
   {
@@ -102,4 +102,3 @@ export const products = [
     ),
   },
 ];
-
