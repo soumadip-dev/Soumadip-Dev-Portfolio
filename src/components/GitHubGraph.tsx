@@ -97,7 +97,7 @@ const GitHubGraph = () => {
   }
 
   return (
-    <section className="container py-12">
+    <section className="container py-9">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-m font-medium text-muted-foreground">GITHUB CONTRIBUTIONS</h2>
         <a

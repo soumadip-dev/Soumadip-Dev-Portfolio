@@ -35,7 +35,7 @@ const socials = [
 const SocialLinks = () => {
   return (
     <section
-      className="container py-6 border-b border-border animate-fade-in"
+      className="container py-8 border-b border-border animate-fade-in"
       style={{ animationDelay: '0.1s' }}
     >
       <h2 className="sr-only">Social Links</h2>
