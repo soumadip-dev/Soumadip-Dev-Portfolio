@@ -1,13 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./src/assets/aboutImage.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soumadip's Personal Portfolio</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Soumadip Majila | Full-Stack Developer & Software Engineer</title>
+    <meta
+      name="description"
+      content="Full-stack developer specializing in React, Node.js, and modern web technologies. Building scalable, performant applications with clean code and best practices."
+    />
+    <meta name="author" content="Soumadip Majila" />
+    <meta
+      name="keywords"
+      content="full-stack developer, software engineer, React, Node.js, JavaScript, TypeScript, web development, portfolio"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://soumadip.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Soumadip Majila | Full-Stack Developer & Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack developer specializing in React, Node.js, and modern web technologies. Building scalable, performant applications with clean code and best practices."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soumadip.vercel.app/" />
+    <meta property="og:image" content="https://soumadip.vercel.app/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Soumadip Majila - Full-Stack Developer Portfolio" />
+    <meta property="og:site_name" content="Soumadip Majila Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourtwitterhandle" />
+    <meta name="twitter:creator" content="@yourtwitterhandle" />
+    <meta
+      name="twitter:title"
+      content="Soumadip Majila | Full-Stack Developer & Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-stack developer specializing in React, Node.js, and modern web technologies."
+    />
+    <meta name="twitter:image" content="https://soumadip.vercel.app/images/twitter-image.png" />
+    <meta name="twitter:image:alt" content="Soumadip Majila - Full-Stack Developer Portfolio" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#3b82f6" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" as="image" href="/images/profile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Soumadip Majila",
+        "url": "https://soumadip.vercel.app",
+        "image": "https://soumadip.vercel.app/images/profile.png",
+        "jobTitle": "Full-Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Self-Employed"
+        },
+        "sameAs": [
+          "https://github.com/yourusername",
+          "https://linkedin.com/in/yourusername",
+          "https://twitter.com/yourtwitterhandle"
+        ],
+        "description": "Full-stack developer specializing in React, Node.js, and modern web technologies.",
+        "knowsAbout": [
+          "React",
+          "Node.js",
+          "JavaScript",
+          "TypeScript",
+          "Web Development",
+          "Full-Stack Development"
+        ]
+      }
+    </script>
+
+    <!-- Additional structured data for portfolio -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://soumadip.vercel.app",
+        "name": "Soumadip Majila Portfolio",
+        "description": "Portfolio of Soumadip Majila - Full-Stack Developer & Software Engineer",
+        "author": {
+          "@type": "Person",
+          "name": "Soumadip Majila"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://soumadip.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Performance meta tags -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Mobile specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Additional SEO -->
+    <meta name="generator" content="React + Vite" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Preload critical assets -->
+    <noscript>
+      <img
+        src="/images/profile.png"
+        alt="Soumadip Majila Profile Picture"
+        width="200"
+        height="200"
+      />
+      <p>JavaScript is disabled. Please enable JavaScript to view this portfolio.</p>
+    </noscript>
   </body>
 </html>
