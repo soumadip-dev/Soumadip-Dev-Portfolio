@@ -5,12 +5,20 @@ const HeroSection = () => {
   return (
     <section className="animate-fade-in mt-7">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6 container border-b border-border">
-        <div className="relative">
-          <img
-            src="/images/profile.png"
-            alt="Soumadip Majila"
-            className="h-28 w-28 rounded-full object-cover ring-2 ring-border"
-          />
+        <div className="relative group">
+          <div className="relative h-32 w-32">
+            <div className="absolute -inset-2 bg-gradient-to-r from-accent/20 to-muted-foreground/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 group-hover:from-accent/30 group-hover:to-muted-foreground/30" />
+            <img
+              src="/images/profile.png"
+              alt="Soumadip Majila"
+              className="relative h-full w-full rounded-full object-cover ring-2 ring-border 
+                       transition-all duration-500 
+                       group-hover:ring-accent/50
+                       group-hover:scale-105
+                       group-hover:ring-3"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-t from-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
         </div>
         <div className="text-center sm:text-left pt-5">
           <div className="text-xs text-muted-foreground font-mono mb-1 min-h-[1.25rem]">
