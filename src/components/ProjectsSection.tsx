@@ -3,14 +3,12 @@ import { ExternalLink, Github } from 'lucide-react';
 import projects from '@/constants/projectConstant';
 
 const ProjectsSection = () => {
-  // Function to format the current date
   const getCurrentDate = () => {
     const now = new Date();
-    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
     return now.toLocaleDateString('en-US', options);
   };
 
-  // Get the current date on every render
   const currentDate = getCurrentDate();
 
   return (

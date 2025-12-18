@@ -1,0 +1,31 @@
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiRedux,
+  SiPostgresql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiRedis,
+  SiDocker,
+  SiGit,
+  SiExpress,
+} from 'react-icons/si';
+
+export const technologies = [
+  { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' },
+  { icon: SiTypescript, name: 'TypeScript', color: '#3178C6' },
+  { icon: SiReact, name: 'React', color: '#61DAFB' },
+  { icon: SiRedux, name: 'Redux', color: '#764ABC' },
+  { icon: SiNextdotjs, name: 'Next.js', color: 'currentColor' },
+  { icon: SiTailwindcss, name: 'Tailwind', color: '#06B6D4' },
+  { icon: SiNodedotjs, name: 'Node.js', color: '#339933' },
+  { icon: SiExpress, name: 'Express.js', color: '#000000' },
+  { icon: SiPostgresql, name: 'PostgreSQL', color: '#4169E1' },
+  { icon: SiMongodb, name: 'MongoDB', color: '#47A248' },
+  { icon: SiRedis, name: 'Redis', color: '#DC382D' },
+  { icon: SiDocker, name: 'Docker', color: '#2496ED' },
+  { icon: SiGit, name: 'Git', color: '#F05032' },
+];

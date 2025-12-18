@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { githubConfig } from '@/constants/githubConstants';
 
 interface ContributionDay {
   date: string;
@@ -21,9 +22,7 @@ const GitHubGraph = () => {
 
   const fetchContributions = async () => {
     try {
-      const response = await fetch(
-        'https://github-contributions-api.jogruber.de/v4/soumadip-dev?y=last'
-      );
+      const response = await fetch(githubConfig.apiEndpoint);
       const data = await response.json();
 
       if (data.contributions) {
@@ -99,14 +98,14 @@ const GitHubGraph = () => {
   return (
     <section className="container py-9">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-m font-medium text-muted-foreground">GITHUB CONTRIBUTIONS</h2>
+        <h2 className="text-m font-medium text-muted-foreground">{githubConfig.title}</h2>
         <a
-          href="https://github.com/soumadip-dev"
+          href={githubConfig.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-m text-muted-foreground hover:text-primary transition-colors"
         >
-          @soumadip-dev
+          @{githubConfig.username}
         </a>
       </div>
 
@@ -132,7 +131,6 @@ const GitHubGraph = () => {
           </div>
         </div>
 
-        {/* Legend */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 gap-3">
           <span className="text-xs text-muted-foreground">
             {totalContributions.toLocaleString()} contributions in the last year
