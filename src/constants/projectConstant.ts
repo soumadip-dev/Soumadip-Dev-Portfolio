@@ -31,7 +31,7 @@ const projects = [
       'A full-stack food delivery app with real-time tracking, payments, and modern UI for users.',
     tech: ['Node.js', 'React', 'MongoDb'],
     github: 'https://github.com/soumadip-dev/BiteBox-MERN',
-    demo: 'https://github.com/soumadip-dev/BiteBox-MERN',
+    demo: 'https://www.linkedin.com/posts/soumadip-majila-dgp_mern-fooddeliveryapp-fullstack-activity-7418151650302906368-oXpX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1aMJQBxnv5DdAHrtZuCweFePs_SWP_DFE',
     year: '2025',
   },
 ];

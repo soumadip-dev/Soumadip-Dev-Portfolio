@@ -12,10 +12,12 @@ import {
   SiDocker,
   SiGit,
   SiExpress,
+  SiPython,
 } from 'react-icons/si';
 
 export const technologies = [
   { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' },
+  { icon: SiPython, name: 'Python', color: '#3776AB' },
   { icon: SiTypescript, name: 'TypeScript', color: '#3178C6' },
   { icon: SiReact, name: 'React', color: '#61DAFB' },
   { icon: SiRedux, name: 'Redux', color: '#764ABC' },
