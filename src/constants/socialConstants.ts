@@ -42,7 +42,7 @@ export const socialLinks = [
     name: 'Resume',
     footerIcon: FileText,
     handle: 'Download Resume',
-    url: 'https://drive.google.com/file/d/1QKWaS9INFkW4InQXPNA93A547Lm7_eXI/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/190D9oJDO_rDwSDXajs9TXkj4sZhzw0zK/view?usp=sharing',
     icon: 'https://cdn-icons-png.freepik.com/512/6588/6588143.png',
     darkIcon: 'https://cdn-icons-png.freepik.com/512/6588/6588161.png',
     label: 'Resume',
