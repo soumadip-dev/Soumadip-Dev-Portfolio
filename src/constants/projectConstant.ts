@@ -9,30 +9,46 @@ const projects = [
     year: '2025',
   },
   {
+    title: 'BiteBox',
+    description:
+      'A full-stack food delivery app with real-time tracking, payments, and a modern user interface.',
+    tech: ['Node.js', 'React', 'MongoDB'],
+    github: 'https://github.com/soumadip-dev/BiteBox-MERN',
+    demo: 'https://www.linkedin.com/posts/soumadip-majila-dgp_mern-fooddeliveryapp-fullstack-activity-7418151650302906368-oXpX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1aMJQBxnv5DdAHrtZuCweFePs_SWP_DFE',
+    year: '2025',
+  },
+  {
+    title: 'Crafty.ai',
+    description: 'An AI-powered SaaS platform offering creative and productivity tools.',
+    tech: ['Node.js', 'React', 'MongoDB'],
+    github: 'https://github.com/soumadip-dev/Crafty.ai-MERN',
+    demo: 'https://crafty-ai.vercel.app/',
+    year: '2025',
+  },
+  {
+    title: 'DebugDeer',
+    description: 'An AI-powered code review and debugging assistant that analyzes pull requests.',
+    tech: ['Node.js', 'React', 'PostgreSQL', 'AI SDK', 'Drizzle', 'Pinecone', 'Inngest'],
+    github: 'https://github.com/soumadip-dev/DebugDeer',
+    demo: 'https://www.linkedin.com/posts/soumadip-majila-dgp_ai-webdevelopment-fullstack-activity-7440252963677249538-gJyR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1aMJQBxnv5DdAHrtZuCweFePs_SWP_DFE',
+    year: '2026',
+  },
+  {
     title: 'VedaCLI',
     description:
       'An intelligent CLI powered by Google Gemini, bringing AI capabilities directly to your terminal.',
     tech: ['Node.js', 'Next.js', 'PostgreSQL'],
     github: 'https://github.com/soumadip-dev/VedaCLI-MERN',
     demo: 'https://www.linkedin.com/posts/soumadip-majila-dgp_cli-ai-nodejs-ugcPost-7399306384174923776-cKG0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1aMJQBxnv5DdAHrtZuCweFePs_SWP_DFE',
-    year: '2025',
+    year: '2026',
   },
   {
-    title: 'Crafty.ai',
-    description: 'An AI-powered SaaS platform offering creative and productivity tools for users.',
-    tech: ['Node.js', 'React', 'MongoDb'],
-    github: 'https://github.com/soumadip-dev/Crafty.ai-MERN',
-    demo: 'https://crafty-ai.vercel.app/',
-    year: '2025',
-  },
-  {
-    title: 'BiteBox',
+    title: 'Grocery List App',
     description:
-      'A full-stack food delivery app with real-time tracking, payments, and modern UI for users.',
-    tech: ['Node.js', 'React', 'MongoDb'],
-    github: 'https://github.com/soumadip-dev/BiteBox-MERN',
-    demo: 'https://www.linkedin.com/posts/soumadip-majila-dgp_mern-fooddeliveryapp-fullstack-activity-7418151650302906368-oXpX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1aMJQBxnv5DdAHrtZuCweFePs_SWP_DFE',
-    year: '2025',
+      'A grocery app with authentication, real-time updates, analytics, React Native, PostgreSQL, and Drizzle ORM.',
+    tech: ['React Native', 'Clerk', 'PostgreSQL', 'Drizzle'],
+    github: 'https://github.com/soumadip-dev/FreshCart',
+    year: '2026',
   },
 ];
 

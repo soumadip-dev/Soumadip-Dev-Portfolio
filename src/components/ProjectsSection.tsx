@@ -29,49 +29,68 @@ const ProjectsSection = () => {
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-primary/70 group-hover:bg-primary group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
-                      {project.title}
-                    </h3>
+
+                    {project.title && (
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                    )}
                   </div>
-                  <span className="text-xs text-muted-foreground bg-secondary/80 px-2.5 py-1 rounded-full border border-border/50">
-                    {project.year}
-                  </span>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-border/30 group-hover:border-primary/40 transition-colors duration-300">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 pt-3">
-                  {project.tech.map(t => (
-                    <span
-                      key={t}
-                      className="text-xs text-muted-foreground/90 bg-secondary/40 px-2.5 py-1 rounded-md border border-border/20 group-hover:border-primary/20 transition-colors duration-300"
-                    >
-                      {t}
+
+                  {project.year && (
+                    <span className="text-xs text-muted-foreground bg-secondary/80 px-2.5 py-1 rounded-full border border-border/50">
+                      {project.year}
                     </span>
-                  ))}
+                  )}
                 </div>
+
+                {project.description && (
+                  <p className="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-border/30 group-hover:border-primary/40 transition-colors duration-300">
+                    {project.description}
+                  </p>
+                )}
+
+                {project.tech?.length > 0 && (
+                  <div className="flex flex-wrap gap-2 pt-3">
+                    {project.tech.map(t => (
+                      <span
+                        key={t}
+                        className="text-xs text-muted-foreground/90 bg-secondary/40 px-2.5 py-1 rounded-md border border-border/20 group-hover:border-primary/20 transition-colors duration-300"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <div className="flex items-center gap-2">
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 rounded-lg bg-secondary/80 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/link hover:scale-105 active:scale-95"
-                  aria-label="Live demo"
-                >
-                  <ExternalLink className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-300" />
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 rounded-lg bg-secondary/80 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/link hover:scale-105 active:scale-95"
-                  aria-label="GitHub repository"
-                >
-                  <Github className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-300" />
-                </a>
-              </div>
+              {(project.demo || project.github) && (
+                <div className="flex items-center gap-2">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2.5 rounded-lg bg-secondary/80 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/link hover:scale-105 active:scale-95"
+                      aria-label="Live demo"
+                    >
+                      <ExternalLink className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-300" />
+                    </a>
+                  )}
+
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2.5 rounded-lg bg-secondary/80 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group/link hover:scale-105 active:scale-95"
+                      aria-label="GitHub repository"
+                    >
+                      <Github className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-300" />
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         ))}
