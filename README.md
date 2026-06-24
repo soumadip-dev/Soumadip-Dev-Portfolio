@@ -58,3 +58,4 @@ The focus of this project is **clarity, performance, and simplicity**, rather th
 ```bash
 git clone https://github.com/soumadip-dev/Soumadip-Dev-Portfolio.git
 cd Soumadip-Dev-Portfolio
+```
