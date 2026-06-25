@@ -40,6 +40,8 @@ import { useMutationObserver } from '@/hooks/useMutationObserver';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useRouter } from '@bprogress/next/app';
 import { Icons } from './icons/icons';
+import { RESUME_PATH } from '@/config/site';
+import { trackResumeDownload } from '@/utils/analytics';
 
 type CommandKind = 'command' | 'page' | 'link' | 'component' | 'block';
 
@@ -61,6 +63,13 @@ const MENU_LINKS: CommandLinkItem[] = [
     kind: 'page',
     icon: <Home />,
     shortcut: 'GH',
+  },
+  {
+    title: 'Resume',
+    href: RESUME_PATH,
+    kind: 'link',
+    icon: <FileTextIcon />,
+    openInNewTab: true,
   },
   {
     title: 'Projects',
@@ -152,6 +161,10 @@ const CommandMenu = ({
   const handleOpenLink = useCallback(
     (href: string, openInNewTab = false) => {
       setOpen(false);
+
+      if (href === RESUME_PATH) {
+        trackResumeDownload();
+      }
 
       if (openInNewTab) {
         window.open(href, '_blank', 'noopener');

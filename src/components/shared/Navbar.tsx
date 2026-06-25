@@ -4,19 +4,28 @@ import dynamic from 'next/dynamic';
 import { getAllDocs } from '@/modules/doc/data/document';
 import type { DocPreview } from '@/modules/doc/types/document';
 import { UrlObject } from 'url';
+import { RESUME_PATH } from '@/config/site';
+import { trackResumeDownload } from '@/utils/analytics';
 
 const CommandMenu = dynamic(() => import('@/components/command-menu'));
 
 const navLinks = [
   {
-    shrug: 'projects',
+    name: 'Resume',
+    link: RESUME_PATH,
+    download: true,
+  },
+  {
     name: 'Projects',
     link: '/projects',
   },
   {
-    shrug: 'blog',
     name: 'Blog',
     link: '/blog',
+  },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/soumadip-dev',
   },
 ];
 
@@ -36,11 +45,37 @@ const Navbar = async () => {
           <div className="flex items-center">
             <div className="mr-1 flex items-center gap-4">
               <ul className="hidden gap-4 md:flex">
-                {navLinks.map((navLink, idx) => (
-                  <Link key={idx} href={navLink.link as unknown as UrlObject}>
-                    {navLink.name}
-                  </Link>
-                ))}
+                {navLinks.map((navLink, idx) => {
+                  const isExternal = navLink.link.startsWith('http') || navLink.link.endsWith('.pdf');
+                  if (isExternal) {
+                    return (
+                      <a
+                        key={idx}
+                        href={navLink.link}
+                        download={navLink.download ? 'Soumadip_Majila_Resume.pdf' : undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={navLink.name === 'Resume' ? 'Download Soumadip Majila Resume' : undefined}
+                        onClick={navLink.name === 'Resume' ? trackResumeDownload : undefined}
+                        className={navLink.name === 'Resume' 
+                          ? "underline underline-offset-4 decoration-primary hover:text-foreground/80 transition-colors font-medium"
+                          : "hover:text-foreground/80 transition-colors"
+                        }
+                      >
+                        {navLink.name}
+                      </a>
+                    );
+                  }
+                  return (
+                    <Link
+                      key={idx}
+                      href={navLink.link as unknown as UrlObject}
+                      className="hover:text-foreground/80 transition-colors"
+                    >
+                      {navLink.name}
+                    </Link>
+                  );
+                })}
               </ul>
               <CommandMenu docs={docPreview} />
             </div>

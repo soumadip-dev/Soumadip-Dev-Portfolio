@@ -27,11 +27,9 @@ export const USER: User = {
   ],
   about: `
 - I recently completed my MCA (2025) from Dr. B. C. Roy Engineering College, Durgapur.
-- I have experience building full-stack web applications using React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, TypeScript, and JavaScript.
-- I enjoy designing APIs, building scalable backend systems, and creating responsive user interfaces.
-- Some of my projects include Logiqo, a LeetCode-inspired coding platform, and BiteBox, a full-stack food delivery application with real-time order tracking and payment integration.
+- I have experience building full-stack web applications using React.js, Node.js, Express.js, MongoDB, PostgreSQL, TypeScript, and JavaScript.
+- I enjoy designing APIs, building backend systems, and creating responsive user interfaces.
 - I like learning new technologies and continuously improving my problem-solving and software engineering skills.
-- I am currently looking for Full-Stack Developer and Backend Developer opportunities where I can learn, grow, and contribute.
 `,
   avatar: `${baseUrl}/profile.png`,
   ogImage: `${baseUrl}/opengraph-image.png`,

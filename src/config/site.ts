@@ -44,6 +44,7 @@ export const X_HANDLE = '@SoumadipMajila';
 export const GITHUB_USERNAME = 'soumadip-dev';
 export const SOURCE_CODE_GITHUB_REPO = 'soumadip-dev/Soumadip-Dev-Portfolio';
 export const SOURCE_CODE_GITHUB_URL = 'https://github.com/soumadip-dev/Soumadip-Dev-Portfolio';
+export const RESUME_PATH = '/Soumadip_Majila_Resume.pdf';
 
 export const UTM_PARAMS = {
   utm_source: 'https://soumadip.vercel.app/',
