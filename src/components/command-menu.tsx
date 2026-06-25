@@ -3,7 +3,6 @@
 import {
   ArrowUpDown,
   Book,
-  BriefcaseBusiness,
   CornerDownLeftIcon,
   Cuboid,
   FileTextIcon,
@@ -175,17 +174,6 @@ const CommandMenu = ({
     [router]
   );
 
-  const handleCopyText = useCallback((text: string, message: string) => {
-    setOpen(false);
-    copyToClipboardWithEvent(text, {
-      name: 'command_menu_action',
-      properties: {
-        action: 'copy',
-        text: text,
-      },
-    });
-    toast.success(message);
-  }, []);
 
   const createThemeHandler = useCallback(
     (theme: 'light' | 'dark' | 'system') => () => {

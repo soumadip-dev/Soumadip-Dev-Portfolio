@@ -9,8 +9,6 @@ import {
   CloudCog,
   Binary,
   Hammer,
-  Smartphone,
-  BrainCircuit,
   LucideIcon,
 } from 'lucide-react';
 

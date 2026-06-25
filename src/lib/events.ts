@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const eventSchema = z.object({
   name: z.enum([
     'copy_npm_command',

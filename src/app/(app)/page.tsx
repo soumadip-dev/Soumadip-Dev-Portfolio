@@ -5,13 +5,35 @@ import ContactMe from '@/modules/portfolio/components/Sections/ContactMe';
 import GitHubContri from '@/modules/portfolio/components/Sections/GitHubContri';
 import MyTechnologies from '@/modules/portfolio/components/Sections/MyTechnologies';
 import SectionBorders from '@/components/shared/SectionBorders';
+// import Experiences from '@/modules/portfolio/components/Sections/Experiences';
+import { USER } from '@/modules/portfolio/data/user';
 
 import { inter } from '@/lib/fonts';
-// import Experiences from '@/modules/portfolio/components/Sections/Experiences';
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: `${USER.firstName} ${USER.lastName}`,
+    jobTitle: USER.jobTitle,
+    url: USER.website,
+    sameAs: ['https://github.com/soumadip-dev', 'https://linkedin.com/in/soumadip-majila-dgp'],
+    image: USER.avatar,
+    description: USER.bio,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Durgapur',
+      addressRegion: 'West Bengal',
+      addressCountry: 'India',
+    },
+  };
+
   return (
     <section className="container mx-auto max-w-5xl px-4 lg:px-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div
         className="border-border relative flex h-[12rem] w-full items-center justify-center overflow-hidden border border-t-0 bg-[radial-gradient(circle_at_20%_30%,rgba(0,0,0,0.08)_1px,transparent_1px),radial-gradient(circle_at_80%_70%,rgba(0,0,0,0.06)_1px,transparent_1px),radial-gradient(circle_at_40%_80%,rgba(0,0,0,0.1)_1.5px,transparent_1.5px),radial-gradient(circle_at_90%_20%,rgba(0,0,0,0.06)_1px,transparent_1px)] dark:bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.08)_1px,transparent_1px),radial-gradient(circle_at_80%_70%,rgba(255,255,255,0.06)_1px,transparent_1px),radial-gradient(circle_at_40%_80%,rgba(255,255,255,0.1)_1.5px,transparent_1.5px),radial-gradient(circle_at_90%_20%,rgba(255,255,255,0.06)_1px,transparent_1px)]"
         style={{

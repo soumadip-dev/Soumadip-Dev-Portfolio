@@ -13,7 +13,7 @@ export function DocKeyboardShortcuts({
 }) {
   const router = useRouter();
 
-  const navigate = (href: Route | null, direction: 'previous' | 'next', keys: string) => {
+  const navigate = (href: Route | null) => {
     if (href) {
       router.push(href);
     }
@@ -25,7 +25,7 @@ export function DocKeyboardShortcuts({
       return;
     }
 
-    navigate(next, 'next', 'ArrowRight');
+    navigate(next);
   });
   useHotkeys('ArrowLeft', (event) => {
     // A native interaction was prevented on this event, someone else took ownership of it, ignore.
@@ -33,7 +33,7 @@ export function DocKeyboardShortcuts({
       return;
     }
 
-    navigate(previous, 'previous', 'ArrowLeft');
+    navigate(previous);
   });
 
   return null;

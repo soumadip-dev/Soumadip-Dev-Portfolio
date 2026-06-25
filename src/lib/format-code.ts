@@ -2,6 +2,7 @@ import { Project, ScriptKind } from 'ts-morph';
 
 import { fixImport } from '@/lib/registry';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function formatCode(code: string, styleName: string) {
   code = fixImport(code);
 

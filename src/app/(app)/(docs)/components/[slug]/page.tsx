@@ -111,7 +111,7 @@ const ComponentItemPage = async ({ params }: { params: Promise<{ slug: string }>
   return (
     <>
       <script
-        type="applicaiton/ld+json"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(getPageJsonLd(doc)).replace(/</g, '\\u003c'),
         }}

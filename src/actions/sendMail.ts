@@ -23,7 +23,7 @@ export async function SendMail(contacts: z.infer<typeof Contact>) {
   const { email, message, name } = parsedContacts.data;
 
   try {
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: `Acme <onboarding@resend.dev>`,
       to: [`${process.env.MY_MAIL}`],
       subject: `Portfolio contact - ${name}`,

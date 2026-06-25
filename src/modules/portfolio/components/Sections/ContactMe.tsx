@@ -51,7 +51,7 @@ const ContactMe = () => {
       message: '',
       name: '',
     });
-  }, [isSubmit]);
+  }, [isSubmit, form]);
 
   const { mutate, isPending } = useMutation({
     mutationFn: SendMail,

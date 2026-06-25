@@ -17,7 +17,7 @@ export const getCachedContributions = unstable_cache(
 
       const data = await res.json();
       return data.contributions ?? [];
-    } catch (e) {
+    } catch {
       // On fetch failure (timeout, network error, etc.), return empty contributions to avoid build/prerender failure
       return [];
     }

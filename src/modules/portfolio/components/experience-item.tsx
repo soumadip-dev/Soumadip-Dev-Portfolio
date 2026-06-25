@@ -15,7 +15,7 @@ import { Route } from 'next';
 
 // ── Position item ─────────────────────────────────────────────────────────────
 
-function PositionItem({ position, isLast }: { position: ExperiencePosition; isLast: boolean }) {
+function PositionItem({ position }: { position: ExperiencePosition }) {
   const [isOpen, setIsOpen] = React.useState(position.isExpanded ?? false);
   const chevronTopRef = useRef<ChevronDownIconHandle>(null);
   const chevronBottomRef = useRef<ChevronDownIconHandle>(null);
@@ -26,7 +26,7 @@ function PositionItem({ position, isLast }: { position: ExperiencePosition; isLa
       chevronTopRef.current?.startAnimation();
       chevronBottomRef.current?.startAnimation();
     }
-  }, []);
+  }, [position.isExpanded]);
 
   useEffect(() => {
     if (isOpen) {
@@ -150,10 +150,8 @@ function PositionItem({ position, isLast }: { position: ExperiencePosition; isLa
 
 export function ExperienceItem({
   experience,
-  isLast,
 }: {
   experience: Experience;
-  isLast?: boolean;
 }) {
   const linkRef = useRef<LinkIconHandle>(null);
 
@@ -228,11 +226,10 @@ export function ExperienceItem({
 
       {/* Positions — vertical line via before: on the wrapper */}
       <div className="before:bg-border relative space-y-1 before:absolute before:top-0 before:left-3 before:h-full before:w-px">
-        {experience.positions.map((position, i) => (
+        {experience.positions.map((position) => (
           <PositionItem
             key={position.id}
             position={position}
-            isLast={i === experience.positions.length - 1}
           />
         ))}
       </div>

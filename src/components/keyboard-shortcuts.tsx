@@ -6,13 +6,13 @@ import { useHotkeys } from 'react-hotkeys-hook';
 export function KeyboardShortcuts() {
   const router = useRouter();
 
-  const navigate = (path: string, keys: string) => {
+  const navigate = (path: string) => {
     router.push(path);
   };
 
-  useHotkeys('g>h', () => navigate('/', 'g>h'));
-  useHotkeys('g>c', () => navigate('/components', 'g>c'));
-  useHotkeys('g>b', () => navigate('/blog', 'g>b'));
+  useHotkeys('g>h', () => navigate('/'));
+  useHotkeys('g>c', () => navigate('/components'));
+  useHotkeys('g>b', () => navigate('/blog'));
 
   return null;
 }

@@ -27,17 +27,11 @@ export function IframeEmbed({ className, ...props }: React.ComponentProps<'ifram
   );
 }
 
-export function FramedImage({
-  canZoom = true,
-  ...props
-}: React.ComponentProps<'img'> & {
-  canZoom?: boolean;
-}) {
-  // eslint-disable-next-line jsx-a11y/alt-text
-  const image = <img {...props} />;
-
+export function FramedImage(props: React.ComponentProps<'img'>) {
   return (
     <figure className="relative [&_img]:rounded-xl">
+      {/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element */}
+      <img {...props} />
       <div className="pointer-events-none absolute inset-0 rounded-xl inset-ring-1 inset-ring-black/10 dark:inset-ring-white/10" />
     </figure>
   );
