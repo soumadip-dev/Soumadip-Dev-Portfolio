@@ -62,14 +62,15 @@ export const PROJECTS: Project[] = [
       'Judge0 API',
     ],
     tech: [IconBrandReact, SiExpress, SiPostgresql, SiPrisma],
-    description: `Logiqo is a LeetCode-inspired platform for developers to practice coding in JavaScript, Python, and Java.
+    description: `Logiqo is a coding practice platform that supports JavaScript, Python, and Java with real-time code execution.
 
-* Interactive Code Editor powered by Monaco Editor for real-time coding and testing
-* Multi-language support with JavaScript, Python, and Java
-* Automated test cases to validate submissions
-* Submission tracking with runtime, memory usage, and status
-* User profiles and custom playlist creation for organizing problems
-* Secure authentication with JWT and responsive UI`,
+* Supports 3 programming languages: JavaScript, Python, and Java
+* Monaco Editor integration for real-time coding and testing
+* Automated test case validation for accurate submissions
+* Tracks runtime, memory usage, and execution status for every submission
+* Custom playlists and user profiles for problem organization
+* JWT-based authentication with secure access control
+* Responsive interface optimized for desktop and mobile devices`,
     logo: '',
     shortDescription:
       'A LeetCode-inspired platform for developers to practice coding with real-time test execution.',
@@ -96,17 +97,19 @@ export const PROJECTS: Project[] = [
       'Cloudinary',
     ],
     tech: [IconBrandReact, SiExpress, SiMongodb, SiSocketdotio],
-    description: `BiteBox is a full-stack MERN food delivery application with real-time order tracking and role-based access.
-* Supports User, Restaurant Owner, and Delivery Boy roles
-* Real-time order updates and delivery tracking using Socket.io
-* Secure authentication with JWT and Firebase OAuth
-* Integrated Razorpay payments and Cloudinary image uploads
-* Restaurant owners can manage food items and order status
-* Delivery partners can accept orders and update delivery status with OTP verification`,
+    description: `BiteBox is a full-stack food delivery platform with real-time order management, payments, and role-based workflows.
+
+* Supports 3 distinct roles: Customer, Restaurant Owner, and Delivery Partner
+* Real-time order tracking and status updates using Socket.io
+* JWT and OAuth authentication for secure user access
+* Razorpay payment gateway integration for online payments
+* Cloudinary-powered image upload and management
+* OTP-based delivery verification workflow
+* Responsive MERN architecture built for scalable order processing`,
     logo: '',
     isExpanded: false,
     shortDescription:
-      'A full-stack MERN food delivery application with real-time order tracking and role-based access.',
+      'A MERN food delivery platform with 3 user roles, real-time order tracking, OTP verification, and online payments.',
     image: '/projects/bitebox.png',
   },
   {
@@ -121,12 +124,13 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/soumadip-dev/craftyai',
     skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Clerk', 'Stripe', 'AI APIs'],
     tech: [IconBrandReact, IconBrandNodejs, SiExpress, SiMongodb],
-    description: `Crafty.AI is an AI-powered SaaS platform that brings together multiple creative and productivity tools.
-* AI-powered content and image generation tools
-* Secure user authentication and subscription handling
-* Responsive and modern user interface
-* Multiple AI utilities integrated into a single platform
-* Built with scalable full-stack architecture`,
+    description: `Crafty.AI is an AI-powered SaaS platform that centralizes multiple creative and productivity tools into a single application.
+
+* Multiple AI-powered tools for content and image generation
+* Secure authentication and user management with Clerk
+* Subscription and premium access management
+* Unified dashboard for accessing all AI utilities
+* Centralized workflow eliminating the need for multiple AI platforms`,
     shortDescription:
       'An AI-powered SaaS platform that aggregates multiple creative and productivity AI utilities.',
     logo: '',
@@ -157,21 +161,20 @@ export const PROJECTS: Project[] = [
       'Octokit',
     ],
     tech: [IconBrandReact, SiTailwindcss, SiExpress, SiPostgresql],
-    description: `DebugDeer is an AI-powered code review and debugging assistant that analyzes pull requests, detects issues, and helps developers ship cleaner, more reliable code faster.
+    description: `DebugDeer is an AI-powered code review platform that helps developers identify bugs, review pull requests, and maintain code quality.
 
-* AI-powered code reviews for pull requests and commits with actionable suggestions
-* Automatic bug detection with contextual feedback directly on PRs
-* Code quality analysis covering best practices and anti-patterns
-* Repository-level insights with contextual feedback
-* Secure authentication with GitHub OAuth integration
-* Real-time analysis with fast and scalable architecture
-* Language-agnostic design with extensible rule engine
-* Powered by Gemini AI with Pinecone vector database for intelligent code understanding
-* Background job processing with Inngest for scalable operations`,
+* Automated AI review for pull requests and commits
+* GitHub OAuth integration for repository access
+* Repository-level code analysis with contextual feedback
+* Intelligent bug detection powered by Gemini AI
+* Semantic code understanding using Pinecone vector search
+* Background processing with Inngest for scalable analysis workflows
+* Actionable recommendations for best practices and maintainability
+* Language-agnostic architecture supporting diverse codebases`,
     logo: '',
     isExpanded: false,
     shortDescription:
-      'An AI-powered SaaS platform that aggregates multiple creative and productivity AI utilities.',
+      'An AI-powered GitHub code reviewer that analyzes pull requests, detects issues, and improves code quality.',
   },
   {
     id: 'vedacli',
@@ -194,18 +197,20 @@ export const PROJECTS: Project[] = [
       'GitHub OAuth',
     ],
     tech: [IconBrandReact, SiExpress, SiPostgresql, SiPrisma],
-    description: `VedaCLI is an intelligent command-line interface powered by Google's Gemini, bringing AI capabilities directly to your terminal.
+    description: `VedaCLI is an AI-powered command-line assistant that brings conversational AI and advanced tooling directly into the terminal.
 
-* Device Authorization with GitHub OAuth for secure authentication
-* Simple Chat for direct conversation with AI through your terminal
-* Tool Calling with enhanced capabilities including Google Search, Code Execution (Python), and URL Context analysis (up to 20 URLs)
-* Agent Mode with advanced AI agent for creating applications using structured output
-* Built with modern tech stack including Next.js, Express.js, and PostgreSQL
-* Global CLI installation for seamless terminal integration`,
+* GitHub OAuth Device Authorization for secure CLI authentication
+* AI chat experience directly from the terminal
+* Built-in tool calling for web search, Python execution, and URL analysis
+* Agent mode capable of generating applications through structured workflows
+* Supports context processing across multiple URLs simultaneously
+* Global CLI installation for seamless developer workflows
+* Powered by Gemini AI with PostgreSQL-backed user management
+* Designed for productivity-focused terminal-first development`,
     logo: '',
     isExpanded: false,
     shortDescription:
-      "An intelligent command-line interface powered by Google's Gemini AI, running directly in the terminal.",
+      'An AI-powered CLI with Gemini integration, tool calling, GitHub authentication, and agent-based workflows.',
     image: '/projects/vedacli.png',
   },
   {
@@ -229,21 +234,20 @@ export const PROJECTS: Project[] = [
       'Sentry',
     ],
     tech: [IconBrandReact, SiNodedotjs, SiExpo, SiPostgresql],
-    description: `Grocery List App is a full-featured grocery management application with authentication, real-time updates, and insightful analytics for both iOS and Android platforms.
+    description: `Grocery List App is a React Native application for managing grocery purchases with authentication, analytics, and cross-platform support.
 
-* Secure authentication with Google, Apple & GitHub via Clerk
-* Add, mark as purchased, update quantities, and delete grocery items
-* Clear all purchased items with a single button
-* Insights Dashboard with profile information and usage analytics
-* Secure logout flow with protected routes
-* Built-in user feedback for feature suggestions and bug reports
-* Liquid Glass Tab Effect with iOS-style native tab bar
-* Cross-platform support for both iOS and Android
-* Type-safe database queries with Drizzle ORM and PostgreSQL on Neon
-* Global state management with Zustand`,
+* Supports Google, Apple, and GitHub authentication via Clerk
+* Cross-platform experience for both iOS and Android devices
+* Create, update, track, and remove grocery items efficiently
+* One-click cleanup for completed purchases
+* Personal insights dashboard with account and usage statistics
+* Type-safe PostgreSQL integration using Drizzle ORM
+* Zustand-powered global state management
+* Built-in feedback system for collecting user suggestions and bug reports
+* Native mobile UI with modern iOS-inspired interactions`,
     logo: '',
     isExpanded: false,
     shortDescription:
-      'A React Native cross-platform grocery manager with secure auth, offline support, and insights.',
+      'A cross-platform React Native grocery manager with auth, analytics, and real-time state management.',
   },
 ];
